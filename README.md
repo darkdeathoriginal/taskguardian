@@ -61,12 +61,12 @@ Before you begin, ensure that you have Docker installed on your deployment envir
 1. **Pull Docker Image**: Pull the Task Guardian Docker image from the Docker registry.
 
    ```bash
-   docker pull anwinsharon/taskguardian@latest
+   docker pull anwinsharon/taskguardian:0.1.0
    ```
 
 2. **Run Docker Container**: Once the Docker image is pulled, run a Docker container using the following command.
 ```bash
-docker run -e PORT=$PORT -e MONGODB_URI=$MONGODB_URI -e JWT_SECRET=$JWT_SECRET -e SITE_URL=$SITE_URL -p 3000:3000 anwinsharon/taskguardian@latest
+docker run -e PORT=$PORT -e MONGODB_URI=$MONGODB_URI -e JWT_SECRET=$JWT_SECRET -e SITE_URL=$SITE_URL -p 3000:3000 anwinsharon/taskguardian:0.1.0
 ```
 
 Replace `$PORT` and other variables with you own values.
