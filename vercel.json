@@ -1,1 +1,10 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/" }],"build":[{"source":"./index.js","use":"@vercel/node"}] }
+{
+  "version": 2,
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "build": [
+    {
+      "src": "index.js",
+      "use": "@now/node"
+    }
+  ]
+}
